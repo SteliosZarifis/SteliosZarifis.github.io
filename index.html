@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stelios Zarifis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {font-family: 'Inter', sans-serif; margin:0; padding:0; background:#0d1117; color:#c9d1d9; line-height:1.6;}
+    .container {max-width:960px; margin:40px auto; padding:20px;}
+    header {text-align:center; padding:50px 0 30px;}
+    h1 {font-size:2.9em; margin:0; color:#58a6ff;}
+    h2 {color:#58a6ff; border-bottom:2px solid #30363d; padding-bottom:8px; margin-top:40px;}
+    a {color:#58a6ff; text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    .project {background:#161b22; padding:22px; margin:25px 0; border-radius:8px; border:1px solid #30363d;}
+    .badge img {margin:6px 6px 0 0; vertical-align:middle;}
+    ul {padding-left:20px;}
+    footer {text-align:center; padding:50px; color:#8b949e; font-size:0.9em;}
+  </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>This site was created entirely from scratch on my local machine using WSL.</p>
+<div class="container">
+
+  <header>
+    <h1>Stelios Zarifis</h1>
+    <p style="font-size:1.15em;">
+      PhD Candidate &amp; Teaching Assistant<br>
+      HERON-CoE & Athena Research Center Fellow | National Technical University of Athens
+    </p>
+    <p>
+      <a href="mailto:s.zarifis@athenarc.gr">s.zarifis@athenarc.gr</a> •
+      <a href="https://linkedin.com/in/stelios-zarifis">LinkedIn</a> •
+      <a href="https://github.com/SteliosZarifis">GitHub</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>M.Eng. Electrical and Computer Engineering, NTUA (2025).</p>
+    
+    <p>PhD research fellow at HERON-CoE &amp Athena RC. Research focus on Developmental AI, Reinforcement Learning, Intrinsic Motivation, Predictive Self-Modeling and World-Modeling through interaction in Robotics.</p>
+    
+    <p>Teaching Assistant for the introductory Machine Learning course at ECE NTUA (Fall 2025).</p>
+    
+    <p>Member of IEEE, IEEE Computer Society, IEEE Robotics and Automation Society, AAAI, EURASIP.</p>
+  </section>
+  
+  <section>
+    <h2>Research Focus</h2>
+    <ul>
+      <li>Developmental &amp; Multi-Modal Artificial Intelligence</li>
+      <li>Self and World Modeling for Robotic Systems</li>
+      <li>Curiosity-driven Reinforcement Learning</li>
+      <li>Stochastic Optimization using Diffusion Models</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Diffusion-Based Forecasting for Uncertainty-Aware Model Predictive Control</h3>
+      <p>Diffusion-Informed MPC is a framework that integrates diffusion-based probabilistic forecasting into model predictive control for decision-making in partially observable stochastic systems. Tested on battery energy arbitrage in the New York day-ahead electricity market; outperforms classical forecasters and model-free RL baselines.</p>
+      <p><em>IEEE EUSIPCO 2025 (accepted)</em> • 
+        <a href="https://eusipco2025.org/wp-content/uploads/pdfs/0001877.pdf">Official PDF</a> • 
+        <a href="https://github.com/SteliosZarifis/Diffusion-Informed-MPC-Thesis">Code &amp; Thesis</a>
+      </p>
+    </div>
+    
+    <div class="project">
+      <h3>Diffusion-Based Scenario Tree Generation for Multivariate Time Series Prediction and Multistage Stochastic Optimization</h3>
+      <p>Diffusion Scenario Tree (DST) is a method for constructing scenario trees using diffusion forecasters. Tested on battery energy arbitrage in the New York day-ahead electricity market; outperforms VAR/LSTM-based trees, standard MPC with diffusion and classical forecasters, and model-free RL.</p>
+      <p><em>Submitted to IEEE ICASSP 2026</em> • 
+        <a href="https://arxiv.org/abs/2509.14832">arXiv:2509.14832</a> • 
+        <a href="https://github.com/SteliosZarifis/Diffusion-Informed-MPC-Thesis">Code &amp; Thesis</a>
+      </p>
+    </div>
+    
+    <div class="project">
+      <h3>Diploma Thesis: Decision-Making in Stochastic Environments Using Diffusion Models</h3>
+      <p>Developed Diffusion-Informed Model Predictive Control (D–I MPC), a unified framework that integrates diffusion-based probabilistic forecasting into several MPC variants (deterministic, stochastic, scenario-tree, and heuristic-augmented) for sequential decision-making under uncertainty. Applied to battery energy arbitrage in the New York day-ahead electricity market; consistently outperforms classical forecasters, model-free RL baselines, and closely matches idealized perfect-forecast benchmarks.</p>
+      <p><em>M.Eng. Diploma Thesis, School of ECE, NTUA • June 2025 • Grade 10/10</em> • <a href="https://drive.google.com/file/d/1xBgbVVcHGR8MdFbJiPIi44jtDHOqwHvH/view?usp=sharing">Thesis PDF</a> • 
+        <a href="https://github.com/SteliosZarifis/Diffusion-Informed-MPC-Thesis">Code</a>
+      </p>
+    </div>
+    
+    <div class="project">
+      <h3>Baby Sophia: A Developmental Approach to Self-Exploration through Self-Touch and Hand Regard</h3>
+      <p>Curiosity-driven RL framework for a simulated infant robot that learns self-touch and hand regard using only intrinsic rewards. Uses semantic body map compression and multi-component curiosity rewards + curricula to reproduce infant developmental patterns.</p>
+      <p><em>For the IEEE ICDL 2025 BabyBench Competition</em> • 
+        <a href="https://arxiv.org/abs/2511.09727">arXiv:2511.09727</a> • 
+        <a href="https://github.com/SteliosZarifis/BabyBenchAthena2025">Code</a>
+      </p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Professional Memberships</h2>
+    <p>IEEE • IEEE Computer Society • IEEE Robotics and Automation Society • AAAI • EURASIP</p>
+  </section>
+
+  <footer>
+    © 2025 Stelios Zarifis
+  </footer>
+
+</div>
 </body>
 </html>
-
